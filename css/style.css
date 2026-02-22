@@ -55,25 +55,12 @@
 
  ***/
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+/* @imports removed and moved to <link> tags in HTML for parallel loading */
 
 /*
 	font-family: 'Poppins', sans-serif;
 	font-family: 'Playfair Display', serif;
 */
-
-@import url('owl.css');
-@import url('fontawesome-all.css');
-@import url('simple-line-icons.css');
-@import url('themify-icons.css');
-@import url('flaticon.css');
-@import url('animate.css');
-@import url('jquery-ui.css');
-@import url('jquery.fancybox.min.css');
-@import url('scrollbar.css');
-@import url('datetimepicker.css');
-@import url('hover.css');
-@import url('custom-animate.css');
 
 /*** 
 
