@@ -21,7 +21,7 @@
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () {
         n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
       n.queue = []; t = b.createElement(e); t.async = !0;
@@ -437,7 +437,9 @@
     <section class="banner-section banner-one">
       <div class="banner-carousel owl-theme owl-carousel">
         <!-- Slide Item -->
-        <div class="slide-item content-right lazy-slide" data-bg="images/scuba9.webp">
+        <div class="slide-item content-right">
+          <img src="images/scuba9.webp" alt="Scuba Diving in Goa" width="1920" height="1080" fetchpriority="high"
+            loading="eager" class="hero-img">
           <div class="auto-container">
             <div class="content-box">
               <div class="content clearfix">
