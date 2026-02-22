@@ -39,9 +39,9 @@ src="https://www.facebook.com/tr?id=670972202622714&ev=PageView&noscript=1"
     <title id="breadcrumb-heading">Loading...</title>
    
     <!-- Stylesheets -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
-    <link href="css/responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
     
     <link href="https://www.scubadivingadventure.in/fonts/fa-brands-400.woff2" rel="prefetch">
     
@@ -50,7 +50,7 @@ src="https://www.facebook.com/tr?id=670972202622714&ev=PageView&noscript=1"
     <link href="https://www.scubadivingadventure.in/fonts/flaticon.woff2" rel="prefetch">
 
     <!-- Responsive File -->
-    <link href="css/responsive.min.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/gallery/logo icon.webp" type="image/x-icon">
     <link rel="icon" href="images/gallery/logo icon.webp" type="image/x-icon">
@@ -58,8 +58,8 @@ src="https://www.facebook.com/tr?id=670972202622714&ev=PageView&noscript=1"
 <!-- Responsive Settings -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
     <!-- Source Code Protection Styles -->
     <style>
@@ -596,19 +596,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-back"></span></div>
 
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/owl.min.js"></script>
-<script src="js/appear.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/scrollbar.min.js"></script>
-
-
-<script src="js/element-in-view.min.js"></script>
-<script src="js/custom-script.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/scrollbar.js"></script>
+<script src="js/datetimepicker.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/element-in-view.js"></script>
+<script src="js/custom-script.js"></script>
 
 // Contentful SDK
 <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
@@ -640,7 +640,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         const excerpt = blog.excerpt || "";
         const img = blog.image?.fields?.file?.url
           ? "https:" + blog.image.fields.file.url
-          : "images/default-blog.webp";
+          : "images/default-blog.jpg";
         const author = blog.author || "Admin";
         const publishDate = blog.publishDate
           ? new Date(blog.publishDate).toLocaleDateString("en-GB")
@@ -696,7 +696,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const post = entry.fields;
             const recImg = post.image?.fields?.file?.url
               ? "https:" + post.image.fields.file.url
-              : "images/default-blog.webp";
+              : "images/default-blog.jpg";
             const recTitle = post.title;
             const recSlug = post.slug;
 
@@ -800,7 +800,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         const { title, slug, image, publishDate } = post.fields;
         const imgUrl = image?.fields?.file?.url
           ? "https:" + image.fields.file.url
-          : "images/default-blog.webp";
+          : "images/default-blog.jpg";
         const dateFormatted = publishDate
           ? new Date(publishDate).toLocaleDateString("en-GB")
           : "";
