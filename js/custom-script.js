@@ -6,7 +6,7 @@
 	function handlePreloader() {
 		if($('.preloader').length){
 			$('body').addClass('page-loaded');
-			$('.preloader').delay(1000).fadeOut(0);
+			$('.preloader').delay(100).fadeOut(300);
 		}
 	}
 
