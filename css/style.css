@@ -1213,10 +1213,6 @@ img {
 
 
 
-}
-
-}
-
 .header-top-one .my-account li:last-child {
 	margin-right: 0;
 }
@@ -1267,6 +1263,8 @@ img {
 	display: inline-block;
 	max-width: 100%;
 	max-height: 80px;
+	width: auto;
+	height: auto;
 	z-index: 1;
 }
 
@@ -1546,6 +1544,7 @@ img {
 
 .header-style-two .header-upper .logo-box img {
 	height: 90px;
+	width: auto;
 }
 
 .header-style-two .header-upper .nav-content {
@@ -1871,6 +1870,7 @@ img {
 
 .header-style-three .header-upper .logo-box img {
 	height: 50px;
+	width: auto;
 }
 
 .header-style-three .header-upper .search-btn {
@@ -2009,6 +2009,7 @@ img {
 
 .fixed-header .sticky-header .logo img {
 	height: 50px;
+	width: auto;
 }
 
 .sticky-header .main-menu {
@@ -2327,6 +2328,7 @@ body.search-visible {
 
 .mobile-menu .nav-logo img {
 	max-height: 90px;
+	width: auto;
 }
 
 .mobile-menu-visible {

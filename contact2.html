@@ -3,11 +3,17 @@
 
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>
+      document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KRT96J8');</script>
+})(window,document,'script','dataLayer','GTM-KRT96J8');
+        }, 3500);
+      });
+    </script>
 <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
@@ -22,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Responsive File -->
     <link rel="stylesheet" href="css/responsive.css">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/scuba15s.webp" type="image/x-icon">
     <link rel="icon" href="images/scuba15.webp" type="image/x-icon">
 
@@ -32,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 </head>
 
@@ -43,8 +49,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
      <div class="page-wrapper">
-        <!-- Preloader -->
-        <div class="preloader">
+    <!-- Preloader -->
+    <style>
+      .preloader{position:fixed;left:0;top:0;width:100%;height:100%;z-index:999999;background-color:rgba(0,0,0,0)}
+      .preloader .icon{position:fixed !important;left:50% !important;top:50% !important;transform:translate(-50%,-50%) !important;width:100px !important;height:100px !important;z-index:5;background-color:transparent;background-image:url(images/icons/preloader.svg);background-position:center center !important;background-repeat:no-repeat;background-size:contain !important;transition:all 200ms ease}
+      .page-loaded .preloader .icon{opacity:0}
+      .preloader:before,.preloader:after{content:'';position:absolute;top:0;width:51%;height:100%;background:#ffffff;z-index:0;transition:all 900ms ease 300ms}
+      .preloader:before{left:0}
+      .preloader:after{right:0}
+      .page-loaded .preloader:before{transform:translateX(-101%)}
+      .page-loaded .preloader:after{transform:translateX(101%)}
+    </style>
+    <div class="preloader">
             <div class="icon"></div>
         </div>
 
@@ -66,7 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                      
 
-                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                        <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
                         <a href="https://api.whatsapp.com/send?phone=919625358429&text=Hello, its great to know about scubadivingadventure.in. Help me with the package details and further process" class="float" target="_blank">
                             <i class="fa fa-whatsapp my-float"></i>
                         </a>
@@ -506,14 +522,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script defer src="js/jquery.js"></script>
     <script defer src="js/popper.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
-    <script defer src="js/jquery-ui.js"></script>
-    <script defer src="js/jquery.fancybox.js"></script>
-    <script defer src="js/validate.js"></script>
-    <script defer src="js/appear.js"></script>
-    <script defer src="js/wow.js"></script>
-    <script defer src="js/scrollbar.js"></script>
-    <script defer src="js/element-in-view.js"></script>
-    <script defer src="js/custom-script.js"></script>
+    <script defer src="js/jquery-ui.min.js" defer defer></script>
+    <script defer src="js/jquery.fancybox.min.js" defer defer></script>
+    <script defer src="js/validate.js" defer defer></script>
+    <script defer src="js/appear.js" defer defer></script>
+    <script defer src="js/wow.js" defer defer></script>
+    <script defer src="js/scrollbar.js" defer defer></script>
+    <script defer src="js/element-in-view.js" defer defer></script>
+    <script defer src="js/custom-script.js" defer defer></script>
 
     <!--Google Map-->
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHJe2MPH8B-gLzZu5QI0Alc73nvkLuuqQ"></script>
