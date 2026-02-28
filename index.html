@@ -4,40 +4,42 @@
 <head>
   <!-- Google Tag Manager -->
   <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-KRT96J8");
-        }, 3500);
-      });
-    </script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-KRT96J8");
+      }, 3500);
+    });
+  </script>
   <!-- End Google Tag Manager -->
   <!-- Meta Pixel Code -->
   <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '670972202622714');
-    fbq('track', 'PageView');
-    </script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '670972202622714');
+        fbq('track', 'PageView');
+      }, 3500);
+    });
+  </script>
   <noscript><img loading="lazy" height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=670972202622714&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
@@ -59,12 +61,13 @@
   <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" />
   <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" />
   <link rel="preload" href="fonts/fa-regular-400.woff2" as="font" type="font/woff2" />
+  <link rel="preload" as="image" href="images/scuba9.webp" />
 
   <!-- Stylesheets -->
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
-  
+
 
   <link rel="shortcut icon" href="images/gallery/logo icon.webp" type="image/x-icon" />
   <link rel="icon" href="images/gallery/logo icon.webp" type="image/x-icon" />
@@ -72,7 +75,7 @@
   <!-- Responsive Settings -->
 
   <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--[if lt IE 9
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
@@ -81,7 +84,7 @@
     href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
   <!-- Source Code Protection Styles -->
-  
+
   </style>
 </head>
 
@@ -94,14 +97,63 @@
   <div class="page-wrapper protected-content">
     <!-- Preloader -->
     <style>
-      .preloader{position:fixed;left:0;top:0;width:100%;height:100%;z-index:999999;background-color:rgba(0,0,0,0)}
-      .preloader .icon{position:fixed !important;left:50% !important;top:50% !important;transform:translate(-50%,-50%) !important;width:100px !important;height:100px !important;z-index:5;background-color:transparent;background-image:url(images/icons/preloader.svg);background-position:center center !important;background-repeat:no-repeat;background-size:contain !important;transition:all 200ms ease}
-      .page-loaded .preloader .icon{opacity:0}
-      .preloader:before,.preloader:after{content:'';position:absolute;top:0;width:51%;height:100%;background:#ffffff;z-index:0;transition:all 900ms ease 300ms}
-      .preloader:before{left:0}
-      .preloader:after{right:0}
-      .page-loaded .preloader:before{transform:translateX(-101%)}
-      .page-loaded .preloader:after{transform:translateX(101%)}
+      .preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0)
+      }
+
+      .preloader .icon {
+        position: fixed !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 100px !important;
+        height: 100px !important;
+        z-index: 5;
+        background-color: transparent;
+        background-image: url(images/icons/preloader.svg);
+        background-position: center center !important;
+        background-repeat: no-repeat;
+        background-size: contain !important;
+        transition: all 200ms ease
+      }
+
+      .page-loaded .preloader .icon {
+        opacity: 0
+      }
+
+      .preloader:before,
+      .preloader:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 51%;
+        height: 100%;
+        background: #ffffff;
+        z-index: 0;
+        transition: all 900ms ease 300ms
+      }
+
+      .preloader:before {
+        left: 0
+      }
+
+      .preloader:after {
+        right: 0
+      }
+
+      .page-loaded .preloader:before {
+        transform: translateX(-101%)
+      }
+
+      .page-loaded .preloader:after {
+        transform: translateX(101%)
+      }
     </style>
     <div class="preloader">
       <div class="icon"></div>
@@ -158,7 +210,7 @@
             <div class="nav-content clearfix">
               <div class="nav-outer clearfix">
                 <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler">
+                <div class="mobile-nav-toggler" aria-label="Toggle Navigation">
                   <span class="icon flaticon-menu-1"></span>
                 </div>
 
@@ -278,7 +330,7 @@
 
                 <!--Nav Toggler-->
                 <div class="max-nav-toggler">
-                  <button class="theme-btn toggle-btn">
+                  <button class="theme-btn toggle-btn" aria-label="Toggle Navigation">
                     <span class="flaticon-circled"></span>
                   </button>
                 </div>
@@ -294,9 +346,8 @@
         <div class="auto-container clearfix">
           <!--Logo-->
           <div class="logo pull-left">
-            <a href="index.html" title=""><img loading="lazy" src="images/gallery/6.webp"
-                alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
-                title="scubadivingadventure" width="161" height="80" /></a>
+            <a href="index.html" title=""><img loading="lazy" src="images/gallery/6.webp" alt="" width="161"
+                height="80" /></a>
           </div>
           <!--Right Col-->
           <div class="pull-right clearfix">
@@ -315,15 +366,13 @@
       <!-- Mobile Menu  -->
       <div class="mobile-menu">
         <div class="menu-backdrop"></div>
-        <div class="close-btn">
+        <div class="close-btn" aria-label="Close Navigation">
           <span class="icon flaticon-targeting-cross"></span>
         </div>
 
         <nav class="menu-box">
           <div class="nav-logo">
-            <a href="index.html"><img loading="lazy" src="images/gallery/6.webp"
-                alt="Scuba diving logo featuring a diver silhouette surrounded by marine life and coral."
-                title="scubadivingadventure" width="161" height="80" /></a>
+            <a href="index.html"><img loading="lazy" src="images/gallery/6.webp" alt="" width="161" height="80" /></a>
           </div>
 
           <div class="menu-outer">
@@ -340,15 +389,15 @@
 
     <!-- Hidden Navigation Bar -->
     <section class="hidden-bar right-align">
-      <div class="hidden-bar-closer">
-        <button><span class="flaticon-letter-x"></span></button>
+      <div class="hidden-bar-closer" aria-label="Close">
+        <button aria-label="Close"><span class="flaticon-letter-x"></span></button>
       </div>
 
       <!-- Hidden Bar Wrapper -->
       <div class="hidden-bar-wrapper">
         <div class="logo">
-          <a href="index.html"><img loading="lazy" src="images/gallery/logo canva 10.webp"
-              alt="Logo featuring a diver's mask with fish and coral, labeled 'ScubaDivingAdventure.in.'" /></a>
+          <a href="index.html"><img loading="lazy" src="images/gallery/logo canva 10.webp" alt="" width="161"
+              height="80" /></a>
         </div>
         <div class="content-box">
           <h3>Get In Touch</h3>
@@ -386,250 +435,211 @@
     </section>
     <!-- End / Hidden Bar -->
 
-    <!-- Banner Section -->
-    <section class="banner-section banner-one">
-      <div class="banner-carousel owl-theme owl-carousel">
-        <!-- Slide Item -->
-        <div class="slide-item content-right lazy-slide" data-bg="images/scuba9.webp">
-          <div class="auto-container">
-            <div class="content-box">
-              <div class="content clearfix">
-                <div class="inner">
-                  <h1>
-                    official <br />
-                    Scuba Diving Centre
-                  </h1>
-                  <div class="text">
-                    Enjoyment of Bording. Chat to book your first Scuba Diving
-                    Experience in Goa & Andaman Islands.
+    <!-- Main Content wrapper -->
+    <main>
+      <!-- Banner Section -->
+      <section class="banner-section banner-one">
+        <div class="banner-carousel owl-theme owl-carousel">
+          <!-- Slide Item -->
+          <div class="slide-item content-right"
+            style="background-image: url('images/scuba9.webp'); visibility: visible;">
+            <div class="auto-container">
+              <div class="content-box">
+                <div class="content clearfix">
+                  <div class="inner">
+                    <h1>
+                      official <br />
+                      Scuba Diving Centre
+                    </h1>
+                    <div class="text">
+                      Enjoyment of Bording. Chat to book your first Scuba Diving
+                      Experience in Goa & Andaman Islands.
+                    </div>
+                    <div class="links-box clearfix">
+                      <a href="Scuba-Adventure.html" class="theme-btn btn-style-two">
+                        <div class="btn-title">Explore More</div>
+                      </a>
+                    </div>
                   </div>
-                  <div class="links-box clearfix">
-                    <a href="Scuba-Adventure.html" class="theme-btn btn-style-two">
-                      <div class="btn-title">Explore More</div>
-                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide Item -->
+          <div class="slide-item lazy-slide" data-bg="images/m9.webp">
+            <div class="auto-container">
+              <div class="content-box">
+                <div class="content clearfix">
+                  <div class="inner">
+                    <h1>Water Sports & <br />Scuba Diving Packages</h1>
+                    <div class="text">
+                      Best Scuba Diving and Watersports in Goa & Andaman
+                      Islands. Safe and secured dive in Goa & Andaman for
+                      beginners and swimmers.
+                    </div>
+                    <div class="links-box clearfix">
+                      <a href="Water-Sports.html" class="theme-btn btn-style-two">
+                        <div class="btn-title">View Adventure Packages</div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <!--End Banner Section -->
 
-        <!-- Slide Item -->
-        <div class="slide-item lazy-slide" data-bg="images/m9.webp">
-          <div class="auto-container">
-            <div class="content-box">
-              <div class="content clearfix">
-                <div class="inner">
-                  <h1>Water Sports & <br />Scuba Diving Packages</h1>
-                  <div class="text">
-                    Best Scuba Diving and Watersports in Goa & Andaman
-                    Islands. Safe and secured dive in Goa & Andaman for
-                    beginners and swimmers.
-                  </div>
-                  <div class="links-box clearfix">
-                    <a href="Water-Sports.html" class="theme-btn btn-style-two">
-                      <div class="btn-title">View Adventure Packages</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--End Banner Section -->
+      <!-- Lazy Loading & Carousel Initialization Script -->
+      <script>
+      </script>
 
-    <!-- Lazy Loading & Carousel Initialization Script -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const lazySlides = document.querySelectorAll(".lazy-slide");
-        let loadedSlides = 0;
-
-        lazySlides.forEach((slide, index) => {
-          const img = new Image();
-          const bgUrl = slide.getAttribute("data-bg");
-          img.src = bgUrl;
-
-          img.onload = () => {
-            slide.style.backgroundImage = `url(${bgUrl})`;
-            slide.classList.add("loaded");
-            loadedSlides++;
-
-            if (index === 0) {
-              // Initialize carousel after the first slide is loaded (Critical LCP improvement)
-              initializeCarousel();
-            }
-          };
-        });
-
-        function initializeCarousel() {
-          $(".banner-carousel").owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: true,
-            items: 1,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
-            smartSpeed: 700,
-            navText: [
-              '<span class="prev">‹</span>',
-              '<span class="next">›</span>',
-            ],
-            lazyLoad: true, // Lazy loads the rest of the slides
-          });
-
-          // Refresh Carousel
-          $(".banner-carousel").trigger("refresh.owl.carousel");
+      <!-- CSS for Lazy Loaded Images -->
+      <style>
+        .lazy-slide {
+          min-height: 100vh;
+          /* Ensures full visibility */
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          visibility: hidden;
+          /* Hide until fully loaded */
         }
-      });
-    </script>
 
-    <!-- CSS for Lazy Loaded Images -->
-    <style>
-      .lazy-slide {
-        min-height: 100vh;
-        /* Ensures full visibility */
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        visibility: hidden;
-        /* Hide until fully loaded */
-      }
+        .lazy-slide.loaded {
+          visibility: visible;
+          transition: background-image 0.5s ease-in-out;
+        }
 
-      .lazy-slide.loaded {
-        visibility: visible;
-        transition: background-image 0.5s ease-in-out;
-      }
+        .banner-carousel {
+          width: 100%;
+          overflow: hidden;
+        }
+      </style>
 
-      .banner-carousel {
-        width: 100%;
-        overflow: hidden;
-      }
-    </style>
-
-    <!--About Section-->
-    <section class="about-section">
-      <div class="auto-container">
-        <div class="row clearfix">
-          <!--Left Column-->
-          <div class="left-col col-lg-7 col-md-12 col-sm-12">
-            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="content">
-                <div class="sec-title">
-                  <div class="upper-text">Who We Are</div>
-                  <h3>
-                    Welcome to Scuba Diving Adventure! <br />Best Scuba and
-                    Water Sports experience in Goa & Andaman Island.
-                  </h3>
+      <!--About Section-->
+      <section class="about-section">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <!--Left Column-->
+            <div class="left-col col-lg-7 col-md-12 col-sm-12">
+              <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="content">
+                  <div class="sec-title">
+                    <div class="upper-text">Who We Are</div>
+                    <h3>
+                      Welcome to Scuba Diving Adventure! <br />Best Scuba and
+                      Water Sports experience in Goa & Andaman Island.
+                    </h3>
+                  </div>
                 </div>
-              </div>
 
-              <div class="lower-content">
-                <div class="text">
-                  <span>S</span>cuba diving experience is one of a kind
-                  experience. We Provide Scubadiving experience at Goa and
-                  Andaman Islands, One of the best destination in india. if
-                  you are planning to visit any of these beautiful
-                  destinations, then we recommend to add scubadiving in your
-                  tour to add some Adventure and Thrill.<br />
-                  We Provide best services in Goa & Andaman Because we have been
-                  there and done it. When you choose us, you will feel the
-                  benefit of 7 years experience of Scuba Diving and
-                  Watersports. <a href="Water-Sports.html">Check Out Our Adventure Packages</a>
+                <div class="lower-content">
+                  <div class="text">
+                    <span>S</span>cuba diving experience is one of a kind
+                    experience. We Provide Scubadiving experience at Goa and
+                    Andaman Islands, One of the best destination in india. if
+                    you are planning to visit any of these beautiful
+                    destinations, then we recommend to add scubadiving in your
+                    tour to add some Adventure and Thrill.<br />
+                    We Provide best services in Goa & Andaman Because we have been
+                    there and done it. When you choose us, you will feel the
+                    benefit of 7 years experience of Scuba Diving and
+                    Watersports. <a href="Water-Sports.html">Check Out Our Adventure Packages</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <section></section>
-          <!--Right Column-->
-          <div class="right-col col-lg-5 col-md-12 col-sm-12">
-            <div class="widgets-section">
-              <div class="sec-title">
-                <div class="upper-text">
-                  <span></span>
+            <section></section>
+            <!--Right Column-->
+            <div class="right-col col-lg-5 col-md-12 col-sm-12">
+              <div class="widgets-section">
+                <div class="sec-title">
+                  <div class="upper-text">
+                    <span></span>
+                  </div>
                 </div>
-              </div>
-              <footer class="main-footer footer-style-two">
-                <div class="outer-container">
-                  <!--Widgets Section-->
-                  <div class="widgets-section">
-                    <div class="auto-container">
-                      <div class="widgets-inner">
-                        <div class="shape-1"></div>
-                        <div class="shape-2"></div>
-                        <div class="left-image">
-                          <img loading="lazy" src="images/s48.webp"
-                            alt="Yellow scuba fins with black accents on a bright blue background."
-                            title="Scuba Diving Fins" />
-                        </div>
-                        <div class="offer-carousel-box">
-                          <!--Carousel-->
-                          <div class="offer-carousel owl-theme owl-carousel">
-                            <!--Slide-->
-                            <div class="slide">
-                              <div class="offer-block">
-                                <div class="inner-box">
-                                  <div class="icon-box">
-                                    <span class="flaticon-heart"></span>
-                                  </div>
-                                  <h4>On Popular Combos</h4>
-                                  <div class="subtitle">Best Offers</div>
-                                  <div class="offer-price">
-                                    <span class="percent">20<em>%</em></span>
-                                    <span class="txt">Offer</span>
-                                  </div>
-                                  <div class="links-box clearfix">
-                                    <a href="tel:8287768117" class="theme-btn btn-style-one">
-                                      <div class="btn-title">Call Now</div>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <!--Slide-->
-                            <div class="slide">
-                              <div class="offer-block">
-                                <div class="inner-box">
-                                  <div class="icon-box">
-                                    <span class="flaticon-like"></span>
-                                  </div>
-                                  <h4>We Provide <br />Some Best Offers</h4>
-                                  <div class="subtitle">
-                                    For First Time Scuba
-                                  </div>
-                                  <div class="offer-price">
-                                    <span class="percent">30<em>%</em></span>
-                                    <span class="txt">Offer</span>
-                                  </div>
-                                  <div class="links-box clearfix">
-                                    <a href="tel:8287768117" class="theme-btn btn-style-one">
-                                      <div class="btn-title">Call Now</div>
-                                    </a>
+                <footer class="main-footer footer-style-two">
+                  <div class="outer-container">
+                    <!--Widgets Section-->
+                    <div class="widgets-section">
+                      <div class="auto-container">
+                        <div class="widgets-inner">
+                          <div class="shape-1"></div>
+                          <div class="shape-2"></div>
+                          <div class="left-image">
+                            <img loading="lazy" src="images/s48.webp" alt="Watersports activities" width="400"
+                              height="400" style="border-radius: 12px;" />
+                          </div>
+                          <div class="offer-carousel-box">
+                            <!--Carousel-->
+                            <div class="offer-carousel owl-theme owl-carousel">
+                              <!--Slide-->
+                              <div class="slide">
+                                <div class="offer-block">
+                                  <div class="inner-box">
+                                    <div class="icon-box">
+                                      <span class="flaticon-heart"></span>
+                                    </div>
+                                    <h4>On Popular Combos</h4>
+                                    <div class="subtitle">Best Offers</div>
+                                    <div class="offer-price">
+                                      <span class="percent">20<em>%</em></span>
+                                      <span class="txt">Offer</span>
+                                    </div>
+                                    <div class="links-box clearfix">
+                                      <a href="tel:8287768117" class="theme-btn btn-style-one">
+                                        <div class="btn-title">Call Now</div>
+                                      </a>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                            <!--Slide-->
-                            <div class="slide">
-                              <div class="offer-block">
-                                <div class="inner-box">
-                                  <div class="icon-box">
-                                    <span class="flaticon-meeting"></span>
+                              <!--Slide-->
+                              <div class="slide">
+                                <div class="offer-block">
+                                  <div class="inner-box">
+                                    <div class="icon-box">
+                                      <span class="flaticon-like"></span>
+                                    </div>
+                                    <h4>We Provide <br />Some Best Offers</h4>
+                                    <div class="subtitle">
+                                      For First Time Scuba
+                                    </div>
+                                    <div class="offer-price">
+                                      <span class="percent">30<em>%</em></span>
+                                      <span class="txt">Offer</span>
+                                    </div>
+                                    <div class="links-box clearfix">
+                                      <a href="tel:8287768117" class="theme-btn btn-style-one">
+                                        <div class="btn-title">Call Now</div>
+                                      </a>
+                                    </div>
                                   </div>
-                                  <h4>We Provide <br />Some Best Offers</h4>
-                                  <div class="subtitle">Group Booking</div>
-                                  <div class="offer-price">
-                                    <span class="percent">30<em>%</em></span>
-                                    <span class="txt">Offer</span>
-                                  </div>
-                                  <div class="links-box clearfix">
-                                    <a href="tel:8287768117" class="theme-btn btn-style-one">
-                                      <div class="btn-title">Call Now</div>
-                                    </a>
+                                </div>
+                              </div>
+                              <!--Slide-->
+                              <div class="slide">
+                                <div class="offer-block">
+                                  <div class="inner-box">
+                                    <div class="icon-box">
+                                      <span class="flaticon-meeting"></span>
+                                    </div>
+                                    <h4>We Provide <br />Some Best Offers</h4>
+                                    <div class="subtitle">Group Booking</div>
+                                    <div class="offer-price">
+                                      <span class="percent">30<em>%</em></span>
+                                      <span class="txt">Offer</span>
+                                    </div>
+                                    <div class="links-box clearfix">
+                                      <a href="tel:8287768117" class="theme-btn btn-style-one">
+                                        <div class="btn-title">Call Now</div>
+                                      </a>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -639,1177 +649,1176 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </footer>
+                </footer>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Services Section-->
-    <section class="services-section">
-      <div class="title-box">
-        <div class="image-layer" style="background-image: url(images/s46.webp)"></div>
-        <div class="auto-container">
-          <div class="sec-title centered light with-border">
-            <div class="upper-text">
-              Any 5 Water Sports included On Scuba Diving Combo
+      <!--Services Section-->
+      <section class="services-section">
+        <div class="title-box">
+          <div class="image-layer" style="background-image: url(images/s46.webp)"></div>
+          <div class="auto-container">
+            <div class="sec-title centered light with-border">
+              <div class="upper-text">
+                Any 5 Water Sports included On Scuba Diving Combo
+              </div>
+              <h2>Experience The <strong>Thrill</strong></h2>
+              <div class="separator"></div>
             </div>
-            <h2>Experience The <strong>Thrill</strong></h2>
+          </div>
+        </div>
+        <div class="auto-container">
+          <div class="carousel-outer">
+            <!--Services Carousel-->
+            <div class="services-carousel owl-theme owl-carousel">
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a href="#"><img loading="lazy" src="images/scuba13.webp" alt="At Grand Island" width="370"
+                        height="250" title="At Grand Island" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-surf-sea"></span>
+                      </div>
+                      <div class="cat">Scuba Diving</div>
+                      <h4>At Grand Island</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a><img loading="lazy" src="images/s56.webp" alt="Adventure Package" width="370" height="250"
+                        title="Adventure Package" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-jet-ski"></span>
+                      </div>
+                      <div class="cat">Water Sport</div>
+                      <h4>Jet Skiing Only @ 299</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a><img loading="lazy" src="images/s66.webp" alt="Scubadiving" width="370" height="250"
+                        title="Scubadiving" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-jet-ski"></span>
+                      </div>
+                      <div class="cat">Water Sport</div>
+                      <h4>Speed Boat Only @ 399</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a><img loading="lazy" src="images/scuba10.webp" alt="Scubadiving in Andaman" title="scubadiving"
+                        width="370" height="250" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-surf-sea"></span>
+                      </div>
+                      <div class="cat">Scuba Diving</div>
+                      <h4>At Neil Island</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a><img loading="lazy" src="images/s61.webp" alt="watersports in goa" title="watersports"
+                        width="370" height="250" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-jet-ski"></span>
+                      </div>
+                      <div class="cat">Water Sport</div>
+                      <h4>Banana Ride Only @ 399</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a><img loading="lazy" src="images/s70.webp" alt="Parasailing in Goa" title="Parasailing"
+                        width="370" height="250" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-jet-ski"></span>
+                      </div>
+                      <div class="cat">Water Sport</div>
+                      <h4>Parasailing Only @ 599</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a><img loading="lazy" src="images/s64.webp" alt="Snorkeling in Andaman" title="Snorkeling"
+                        width="370" height="250" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-jet-ski"></span>
+                      </div>
+                      <div class="cat">Snorkeling</div>
+                      <h4>in Andaman</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a><img loading="lazy" src="images/s57.webp" alt="watersport in goa" title="watersport" width="370"
+                        height="250" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-jet-ski"></span>
+                      </div>
+                      <div class="cat">Water Sports</div>
+                      <h4>Bumper Ride Only @ 299</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Service Block-->
+              <div class="service-block">
+                <div class="inner-box">
+                  <div class="image-box">
+                    <a><img loading="lazy" src="images/scuba21.webp" alt="scubadiving in goa" title="scuba" width="370"
+                        height="250" /></a>
+                  </div>
+
+                  <div class="lower-box">
+                    <div class="lower-content">
+                      <div class="icon-box">
+                        <span class="flaticon-surf-sea"></span>
+                      </div>
+                      <div class="cat">Scuba Diving</div>
+                      <h4>At Biana Beach</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Services Carousel-->
+          </div>
+        </div>
+      </section>
+
+      <!--Pricing Section-->
+      <section class="pricing-section">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <!--Pricing Column-->
+            <div class="pricing-column col-xl-8 col-lg-12 col-sm-12">
+              <div class="inner">
+                <div class="sec-title with-border">
+                  <div class="upper-text">Scuba diving in Goa</div>
+                  <h2>Special <strong>Packages</strong></h2>
+                  <div class="separator"></div>
+                  <div class="link-box">
+                    <a href="Water-Sports.html" class="theme-btn btn-style-one">
+                      <div class="btn-title">Goa All Packages</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row clearfix">
+
+                  <!--Price Column-->
+                  <div class="price-column col-md-6 col-sm-12 wow fadeInDown" data-wow-delay="0ms"
+                    data-wow-duration="1500ms">
+                    <div class="price-block">
+                      <div class="inner-box">
+                        <div class="plan-header">
+                          <h4 class="plan-title">Scuba Diving at Grand Island</h4>
+                          <div class="subtitle">
+                            With Watersports | Grand Island Trip | Premium Bestselling Combo
+                          </div>
+                          <div class="price">
+                            <s style="font-size: x-large">6,500 </s><br />
+                            <span class="amount">3,500</span>
+                            <span class="cycle">INR</span>
+                          </div>
+                          <div class="ratings">
+                            <div class="rate-text" style="color: #051137">
+                              <strong>4.8</strong> <a href="#">[980 Reviews]</a>
+                            </div>
+                            <div class="rate" style="color: goldenrod">
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star-half-o"></span>
+                            </div>
+                            <li>
+                              We take limited Guest only with unlimited time
+                              satisfaction in this premium package.
+                            </li>
+                          </div>
+                          <div class="best-title">
+                            <span>Package inclusion</span>
+                          </div>
+                        </div>
+
+                        <div class="plan-features">
+                          <ul class="clearfix">
+                            <li>
+                              <span class="flaticon-truck"></span> Free Pick
+                              up/drop from Hotel
+                            </li>
+                            <li>
+                              <span class="flaticon-sailboat"></span> 65+ km
+                              open Speed Boat WET sea trip over Arabian sea.
+                            </li>
+                            <li>
+                              <span class="flaticon-boat"></span> Dolphin |
+                              Sightseeing
+                            </li>
+
+                            <li>
+                              <span class="flaticon-scuba-1"></span> Scuba
+                              Training by PADI Diver
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> Scuba Diving
+                              at Grand Island
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba-1"></span> Scuba Head
+                              Cap
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> Scuba Diving
+                              Full Wet Suit
+                            </li>
+
+                            <li>
+                              <span class="flaticon-swimming-pool"></span> Scuba
+                              Cylinder
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba-1"></span> Mouth Pump
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> BCD Regulator
+                            </li>
+                            <li>
+                              <span class="flaticon-video-camera"></span> HD
+                              Live Videoshoot underwater with GoPro Camera.
+                            </li>
+                            <li>
+                              <span class="flaticon-boat-race"></span> Water
+                              Sports
+                            </li>
+                            <li>
+                              <span class="flaticon-jet-ski"></span> JetSki Ride
+                            </li>
+                            <li>
+                              <span class="flaticon-surf-sea"></span> Bumper
+                              Ride
+                            </li>
+                            <li>
+                              <span class="flaticon-sailboat"></span>
+                              Parasailling With Sea Dip (Free Sea Dip Worth
+                              500)
+                            </li>
+                            <li>
+                              <span class="flaticon-boat"></span> Speed Boat Ride
+                            </li>
+                            <li>
+                              <span class="flaticon-surf"></span> Banana ride
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> snorkeling
+                              (complimentary)
+                            </li>
+
+                            <li>
+                              <span class="flaticon-kitchen"></span> Breakfast |
+                              Lunch (veg & Non-veg)
+                            </li>
+                            <li>
+                              <span class="flaticon-kitchen"></span> Mineral
+                              Water | Beers
+                            </li>
+
+                            <li>
+                              <span class="flaticon-wallet"></span> Booking
+                              Amount is
+                              <strong>1,000 INR/per person.</strong>
+                            </li>
+                          </ul>
+                          <hr />
+                          <div class="link">
+                            <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa grand island Scuba diving   details, Videos and further process"
+                              class="theme-btn btn-style-three">
+                              <span class="btn-title">Get Details</span></a>
+                          </div>
+                        </div>
+                        <div class="link-box">
+                          <a href="tel:8287768117" class="theme-btn book-btn"><span>Book on Call </span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Price Column-->
+                  <div class="price-column col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+                    data-wow-duration="1500ms">
+                    <div class="price-block">
+                      <div class="inner-box">
+                        <div class="plan-header">
+                          <h4 class="plan-title">
+                            Scuba Diving at Fort Island
+                          </h4>
+                          <div class="subtitle">
+                            With Watersports | Budget Combo
+                          </div>
+                          <div class="price">
+                            <s style="font-size: x-large">4,500 </s><br />
+                            <span class="amount">2,500</span>
+                            <span class="cycle"></span>
+                          </div>
+                          <div class="ratings">
+                            <div class="rate-text" style="color: #051137">
+                              <strong>4.6</strong> <a href="#">[679 Reviews]</a>
+                            </div>
+                            <div class="rate" style="color: goldenrod">
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+
+                          <div class="best-title">
+                            <span>Package inclusion</span>
+                          </div>
+                        </div>
+                        <div class="plan-features">
+                          <ul class="clearfix">
+                            <li>
+                              <span class="flaticon-truck"></span> Free Pick
+                              up/drop (1.5 Hour Bus Journey)
+                            </li>
+                            <li>
+                              <span class="flaticon-sailboat"></span> Speedboat sea trip over Arabian sea.
+                            </li>
+                            <li>
+                              <span class="flaticon-boat"></span> Dolphin |
+                              Sightseeing
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> Scuba Diving
+                              at Fort Island
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba-1"></span> Scuba
+                              Training by PADI Diver
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba-1"></span> Scuba Head
+                              Cap
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> Scuba Diving
+                              Full Wet Suit
+                            </li>
+
+                            <li>
+                              <span class="flaticon-swimming-pool"></span> Scuba
+                              Cylinder
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba-1"></span> Mouth Pump
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> BCD Regulator
+                            </li>
+                            <li>
+                              <span class="flaticon-video-camera"></span> HD
+                              Live Videoshoot underwater with GoPro Camera.
+                            </li>
+                            <li>
+                              <span class="flaticon-boat-race"></span> Water
+                              Sports
+                            </li>
+                            <li>
+                              <span class="flaticon-jet-ski"></span> JetSki Ride
+                            </li>
+                            <li>
+                              <span class="flaticon-surf-sea"></span> Bumper
+                              Ride
+                            </li>
+                            <li>
+                              <span class="flaticon-sailboat"></span>
+                              Parasailling With Sea Dip (Free Sea Dip Worth
+                              500)
+                            </li>
+                            <li>
+                              <span class="flaticon-boat"></span> Speed Boat Ride
+                            </li>
+                            <li>
+                              <span class="flaticon-surf"></span> Banana ride
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> Snorkeling
+                              (complimentary)
+                            </li>
+
+                            <li>
+                              <span class="flaticon-kitchen"></span> Breakfast|
+                              Lunch (veg & Non-veg)
+                            </li>
+                            <li>
+                              <span class="flaticon-kitchen"></span> Mineral
+                              Water | Beers
+                            </li>
+
+                            <li>
+                              <span class="flaticon-wallet"></span> Booking
+                              Amount is <strong>1,000 INR/per person</strong>
+                            </li>
+                          </ul>
+                          <hr />
+                          <div class="link">
+                            <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Scuba diving details, Videos and further process"
+                              class="theme-btn btn-style-three">
+                              <span class="btn-title">Get Details</span></a>
+                          </div>
+                        </div>
+                        <div class="link-box">
+                          <a href="tel:8287768117" class="theme-btn book-btn"><span>Book on Call </span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Image Column-->
+            <div class="image-column col-xl-4 col-lg-12 col-sm-12">
+              <div class="inner wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <img loading="lazy" src="images/gallery/3.jpeg" alt="scubadiving-in-andaman" title="scubadiving"
+                  width="400" height="300" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Pricing Section-->
+      <section class="pricing-section">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <!--Pricing Column-->
+            <div class="pricing-column col-xl-8 col-lg-12 col-sm-12">
+              <div class="inner">
+                <div class="sec-title with-border">
+                  <div class="upper-text">Scuba Diving in Andaman</div>
+                  <h2>Bestselling <strong>Packages</strong></h2>
+                  <div class="separator"></div>
+                  <div class="link-box">
+                    <a href="andaman-nicobar-island-activities.html" class="theme-btn btn-style-one">
+                      <div class="btn-title">Andaman All Activities</div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row clearfix">
+                  <!--Price Column-->
+                  <div class="price-column col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+                    data-wow-duration="1500ms">
+                    <div class="price-block">
+                      <div class="inner-box">
+                        <div class="plan-header">
+                          <h4 class="plan-title">
+                            Scuba Diving at Andaman Island
+                          </h4>
+                          <div class="subtitle">
+                            Best scubadiving for Non-swimmers
+                          </div>
+
+                          <div class="price">
+                            <span class="amount">5,500</span>
+                            <span class="cycle">INR</span>
+                          </div>
+                          <div class="ratings">
+                            <div class="rate-text" style="color: #051137">
+                              <strong>4.9</strong> <a href="#">[208 Reviews]</a>
+                            </div>
+                            <div class="rate" style="color: goldenrod">
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+
+                          <div class="best-title">
+                            <span> Special Offers</span>
+                          </div>
+                        </div>
+
+                        <div class="plan-features">
+                          <ul class="clearfix">
+                            <li>
+                              <span class="flaticon-location"></span> North Bay
+                              Island, Andaman
+                            </li>
+                            <li>
+                              <span class="flaticon-sailboat"></span> NO
+                              Swimming Skills Required
+                            </li>
+                            <li>
+                              <span class="flaticon-boat-race"></span> Best For
+                              Beginners
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> Scuba Diving
+                              at Andaman Island
+                            </li>
+                            <li>
+                              <span class="flaticon-boat-1"></span> Scuba diving
+                              Training by PADI dive master
+                            </li>
+                            <li>
+                              <span class="flaticon-quality"></span> Certified
+                              Scuba Dive Master accompany you underwater
+                            </li>
+
+                            <li>
+                              <span class="flaticon-boat"></span> Boat Ride to
+                              Dive location
+                            </li>
+
+                            <li>
+                              <span class="flaticon-video-camera"></span> Photos
+                              & videos underwater ( Go Pro 10 camera underwater)
+                            </li>
+                            <li>
+                              <span class="flaticon-yacht"></span> Boat Trip |
+                              Sightseeing
+                            </li>
+                            <li>
+                              <span class="flaticon-clock"></span> Maximum Depth
+                              12 Metres
+                            </li>
+                            <li>
+                              <span class="flaticon-quality"></span> Cetified
+                              Scuba Trainer
+                            </li>
+
+                            <li>
+                              <span class="flaticon-truck"></span> Free Pick
+                              up/drop
+                            </li>
+                            <li>
+                              <span class="flaticon-wallet"></span> Pre-Book it
+                              on <strong>15% Discount</strong>
+                            </li>
+                            <li>
+                              <span class="flaticon-wallet"></span> Booking
+                              Amount is <strong>1,000 INR/per person</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="link-box">
+                          <a href="tel:8287768117" class="theme-btn book-btn"><span>Book on Call </span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Price Column-->
+                  <div class="price-column col-md-6 col-sm-12 wow fadeInDown" data-wow-delay="0ms"
+                    data-wow-duration="1500ms">
+                    <div class="price-block">
+                      <div class="inner-box">
+                        <div class="plan-header">
+                          <h4 class="plan-title">
+                            Scuba Diving at Neil Island
+                          </h4>
+                          <div class="subtitle">Andaman & Nicobar Island</div>
+                          <div class="price">
+                            <span class="amount">6,000</span>
+                            <span class="cycle">INR</span>
+                          </div>
+                          <div class="ratings">
+                            <div class="rate-text" style="color: #051137">
+                              <strong>4.8</strong> <a href="#">[123 Reviews]</a>
+                            </div>
+                            <div class="rate" style="color: goldenrod">
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+                          <div class="best-title">
+                            <span> Special Offers</span>
+                          </div>
+                        </div>
+
+                        <div class="plan-features">
+                          <ul class="clearfix">
+                            <li>
+                              <span class="flaticon-location"></span> Neil
+                              Islnad, Andaman Island
+                            </li>
+                            <li>
+                              <span class="flaticon-sailboat"></span> NO
+                              Swimming Skills Required
+                            </li>
+                            <li>
+                              <span class="flaticon-boat-race"></span> Best For
+                              Beginners
+                            </li>
+                            <li>
+                              <span class="flaticon-scuba"></span> Scuba Diving
+                              at Andaman Island
+                            </li>
+                            <li>
+                              <span class="flaticon-boat-1"></span> Scuba diving
+                              Training by PADI dive master
+                            </li>
+                            <li>
+                              <span class="flaticon-quality"></span> Certified
+                              Scuba Dive Master accompany you underwater
+                            </li>
+
+                            <li>
+                              <span class="flaticon-boat"></span> Boat Ride to
+                              Dive location
+                            </li>
+
+                            <li>
+                              <span class="flaticon-video-camera"></span> Photos
+                              & videos underwater ( Go Pro 10 camera underwater)
+                            </li>
+                            <li>
+                              <span class="flaticon-yacht"></span> Boat Trip |
+                              Sightseeing
+                            </li>
+                            <li>
+                              <span class="flaticon-clock"></span> Maximum Depth
+                              12 Metres
+                            </li>
+                            <li>
+                              <span class="flaticon-quality"></span> Cetified
+                              Scuba Trainer
+                            </li>
+
+                            <li>
+                              <span class="flaticon-truck"></span> Free Pick
+                              up/drop
+                            </li>
+                            <li>
+                              <span class="flaticon-wallet"></span> Pre-Book it
+                              on <strong>15% Discount</strong>
+                            </li>
+                            <li>
+                              <span class="flaticon-wallet"></span> Booking
+                              Amount is <strong>1,000 INR/per person</strong>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="link-box">
+                          <a href="tel:8287768117" class="theme-btn book-btn"><span>Book on Call </span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Image Column-->
+            <div class="image-column col-xl-4 col-lg-12 col-sm-12">
+              <div class="inner wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <img loading="lazy" src="images/scuba7.webp" alt="Scubadiving in Andaman" title="scubadiving"
+                  width="400" height="300" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Features Section-->
+      <section class="features-section">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <!--Feature-->
+            <div class="feature-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="icon-box">
+                  <div class="octagonWrap">
+                    <div class="octagon"></div>
+                  </div>
+                  <span class="icon flaticon-scuba"></span>
+                </div>
+                <div class="content">
+                  <h4>Quality & <br />Best Equipments</h4>
+                  <div class="text">
+                    Perfectly simple & easy to use. Provide best safety.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Feature-->
+            <div class="feature-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="icon-box">
+                  <div class="octagonWrap">
+                    <div class="octagon"></div>
+                  </div>
+                  <span class="icon flaticon-boat-race"></span>
+                </div>
+                <div class="content">
+                  <h4>Professional & <br />Expert Instructors</h4>
+                  <div class="text">
+                    The wise man therefore always holds in these matters.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Feature-->
+            <div class="feature-block col-lg-4 col-md-12 col-sm-12">
+              <div class="inner-box">
+                <div class="icon-box">
+                  <div class="octagonWrap">
+                    <div class="octagon"></div>
+                  </div>
+                  <span class="icon flaticon-wallet"></span>
+                </div>
+                <div class="content">
+                  <h4>Value for <br />Spending Money</h4>
+                  <div class="text">
+                    Pleasures to secure best offers and service.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Testimonials Section-->
+      <section class="testimonials-section-two">
+        <div class="auto-container">
+          <div class="sec-title-two centered with-border">
+            <div class="upper-text">Reviews</div>
+            <h2>Travellers <strong>Experiences</strong></h2>
             <div class="separator"></div>
           </div>
         </div>
-      </div>
-      <div class="auto-container">
-        <div class="carousel-outer">
-          <!--Services Carousel-->
-          <div class="services-carousel owl-theme owl-carousel">
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a href="#"><img loading="lazy" src="images/scuba13.webp" alt="At Grand Island"
-                      title="Scuba Diving" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+        <div class="auto-container">
+          <div class="carousel-box">
+            <div class="testimonial-carousel-two owl-theme owl-carousel">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-surf-sea"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Scuba Diving</div>
-                    <h4>At Grand Island</h4>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/Rohan_6_11zon.webp" alt="Rohan" title="Rohan's Review"
+                        width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Suraj Shaw</h5>
+                      <div class="designation">Kolkata, 2023</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      Booked a scuba and water sports combo, and it was perfect.
+                      The scuba diving was well-organized, and the activities
+                      like jet skiing added so much fun. Loved it!
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a><img loading="lazy" src="images/s56.webp"
-                      alt="A person rides a blue jet ski, splashing water while performing a sharp turn on a lake."
-                      title="Jet Skiing" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-jet-ski"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Water Sport</div>
-                    <h4>Jet Skiing Only @ 299</h4>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/Amit_8_11zon.webp" alt="Amit"
+                        title=" Person capturing a serene moment on a boat" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Parth Patel</h5>
+                      <div class="designation">Surat, 2023</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      The scuba diving experience at Grand Island was absolutely
+                      incredible. The team was professional and made sure we
+                      were comfortable throughout. Highly recommended for anyone
+                      visiting Goa!
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a><img loading="lazy" src="images/s66.webp"
-                      alt="Sailboat with people enjoying sunset views over calm waters and distant hills."
-                      title="Sailboat Sunset" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-jet-ski"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Water Sport</div>
-                    <h4>Speed Boat Only @ 399</h4>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/couple_9_11zon.webp" alt="Couple"
+                        title="Couple enjoying the beach" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Sagar Shah</h5>
+                      <div class="designation">Delhi, 2024</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      Tried scuba diving and bumper rides with them, and it was
+                      super fun! The instructors were friendly, and the water
+                      was so clear. Perfect adventure spot for family and
+                      friends.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a><img loading="lazy" src="images/scuba10.webp" alt="Scubadiving in Andaman"
-                      title="scubadiving" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-surf-sea"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Scuba Diving</div>
-                    <h4>At Neil Island</h4>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/Priya_5_11zon.webp"
+                        alt="Three friends pose for a selfie in front of a restaurant sign labeled Ohaba Restaurant."
+                        title="Megha's Review" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Megha Verma</h5>
+                      <div class="designation">Indore, 2023</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      Their parasailing and jet skiing activities were
+                      thrilling! The team was very professional, and the
+                      equipment was top-notch. Had a blast with my friends!
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a><img loading="lazy" src="images/s61.webp" alt="watersports in goa" title="watersports" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-jet-ski"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Water Sport</div>
-                    <h4>Banana Ride Only @ 399</h4>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/couple2_10_11zon.webp"
+                        alt="Couple wearing matching pink jackets and sunglasses, smiling and posing together outdoors."
+                        title=" Couple enjoying the outdoors" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Mohit Kumar</h5>
+                      <div class="designation">Noida, 2023</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      We did the scuba and water sports combo, and it was
+                      perfect for our family. Everyone had fun, and the staff
+                      was very accommodating. Great value for money!
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a><img loading="lazy" src="images/s70.webp" alt="Parasailing in Goa" title="Parasailing" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-jet-ski"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Water Sport</div>
-                    <h4>Parasailing Only @ 599</h4>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/couple6_4_11zon.webp"
+                        alt="Man in a blue jacket and woman in a green and gold saree pose together with a plant behind them."
+                        title="Couple enjoying a moment together" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Shrikant Reddy</h5>
+                      <div class="designation">Hyderabad, 2023</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      From the booking process to the dive, everything was
+                      smooth. The detailed instructions and guidance made the
+                      experience stress-free. Totally worth it!
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a><img loading="lazy" src="images/s64.webp" alt="Snorkeling in Andaman" title="Snorkeling" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-jet-ski"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Snorkeling</div>
-                    <h4>in Andaman</h4>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/couple5_3_11zon.webp"
+                        alt="Smiling couple poses for a selfie outdoors at dusk, greenery in the background."
+                        title=" Couple enjoying a selfie outdoors" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Rohit Rajput</h5>
+                      <div class="designation">Jaipur, 2024</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      Their water sports packages are amazing! The parasailing
+                      views were stunning, and the banana boat ride was
+                      hilarious fun. Great way to enjoy Goa.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a><img loading="lazy" src="images/s57.webp" alt="watersport in goa" title="watersport" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-jet-ski"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Water Sports</div>
-                    <h4>Bumper Ride Only @ 299</h4>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/ruhi_7_11zon.webp"
+                        alt="Woman in sunglasses holding a bouquet of purple orchids, wearing a black shirt and beige skirt."
+                        title="Ruhi's Review" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Kritika</h5>
+                      <div class="designation">Bangalore, 2023</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </div>
+                    </div>
+                    <div class="text">
+                      Had an awesome time doing scuba diving and bumper rides.
+                      The staff was very friendly and helpful. Definitely
+                      booking with them again on my next trip to Goa!
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--Service Block-->
-            <div class="service-block">
-              <div class="inner-box">
-                <div class="image-box">
-                  <a><img loading="lazy" src="images/scuba21.webp" alt="scubadiving in goa" title="scuba" /></a>
-                </div>
-
-                <div class="lower-box">
-                  <div class="lower-content">
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
                     <div class="icon-box">
-                      <span class="flaticon-surf-sea"></span>
+                      <span class="flaticon-quote-1"></span>
                     </div>
-                    <div class="cat">Scuba Diving</div>
-                    <h4>At Biana Beach</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--End Services Carousel-->
-        </div>
-      </div>
-    </section>
-
-    <!--Pricing Section-->
-    <section class="pricing-section">
-      <div class="auto-container">
-        <div class="row clearfix">
-          <!--Pricing Column-->
-          <div class="pricing-column col-xl-8 col-lg-12 col-sm-12">
-            <div class="inner">
-              <div class="sec-title with-border">
-                <div class="upper-text">Scuba diving in Goa</div>
-                <h2>Special <strong>Packages</strong></h2>
-                <div class="separator"></div>
-                <div class="link-box">
-                  <a href="Water-Sports.html" class="theme-btn btn-style-one">
-                    <div class="btn-title">Goa All Packages</div>
-                  </a>
-                </div>
-              </div>
-              <div class="row clearfix">
-
-                <!--Price Column-->
-                <div class="price-column col-md-6 col-sm-12 wow fadeInDown" data-wow-delay="0ms"
-                  data-wow-duration="1500ms">
-                  <div class="price-block">
-                    <div class="inner-box">
-                      <div class="plan-header">
-                        <h4 class="plan-title">Scuba Diving at Grand Island</h4>
-                        <div class="subtitle">
-                          With Watersports | Grand Island Trip | Premium Bestselling Combo
-                        </div>
-                        <div class="price">
-                          <s style="font-size: x-large">6,500 </s><br />
-                          <span class="amount">3,500</span>
-                          <span class="cycle">INR</span>
-                        </div>
-                        <div class="ratings">
-                          <div class="rate-text" style="color: #051137">
-                            <strong>4.8</strong> <a href="#">[980 Reviews]</a>
-                          </div>
-                          <div class="rate" style="color: goldenrod">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star-half-o"></span>
-                          </div>
-                          <li>
-                            We take limited Guest only with unlimited time
-                            satisfaction in this premium package.
-                          </li>
-                        </div>
-                        <div class="best-title">
-                          <span>Package inclusion</span>
-                        </div>
-                      </div>
-
-                      <div class="plan-features">
-                        <ul class="clearfix">
-                          <li>
-                            <span class="flaticon-truck"></span> Free Pick
-                            up/drop from Hotel
-                          </li>
-                          <li>
-                            <span class="flaticon-sailboat"></span> 65+ km
-                            open Speed Boat WET sea trip over Arabian sea.
-                          </li>
-                          <li>
-                            <span class="flaticon-boat"></span> Dolphin |
-                            Sightseeing
-                          </li>
-
-                          <li>
-                            <span class="flaticon-scuba-1"></span> Scuba
-                            Training by PADI Diver
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> Scuba Diving
-                            at Grand Island
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba-1"></span> Scuba Head
-                            Cap
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> Scuba Diving
-                            Full Wet Suit
-                          </li>
-
-                          <li>
-                            <span class="flaticon-swimming-pool"></span> Scuba
-                            Cylinder
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba-1"></span> Mouth Pump
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> BCD Regulator
-                          </li>
-                          <li>
-                            <span class="flaticon-video-camera"></span> HD
-                            Live Videoshoot underwater with GoPro Camera.
-                          </li>
-                          <li>
-                            <span class="flaticon-boat-race"></span> Water
-                            Sports
-                          </li>
-                          <li>
-                            <span class="flaticon-jet-ski"></span> JetSki Ride
-                          </li>
-                          <li>
-                            <span class="flaticon-surf-sea"></span> Bumper
-                            Ride
-                          </li>
-                          <li>
-                            <span class="flaticon-sailboat"></span>
-                            Parasailling With Sea Dip (Free Sea Dip Worth
-                            500)
-                          </li>
-                          <li>
-                            <span class="flaticon-boat"></span> Speed Boat Ride
-                          </li>
-                          <li>
-                            <span class="flaticon-surf"></span> Banana ride
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> snorkeling
-                            (complimentary)
-                          </li>
-
-                          <li>
-                            <span class="flaticon-kitchen"></span> Breakfast |
-                            Lunch (veg & Non-veg)
-                          </li>
-                          <li>
-                            <span class="flaticon-kitchen"></span> Mineral
-                            Water | Beers
-                          </li>
-
-                          <li>
-                            <span class="flaticon-wallet"></span> Booking
-                            Amount is
-                            <strong>1,000 INR/per person.</strong>
-                          </li>
-                        </ul>
-                        <hr />
-                        <div class="link">
-                          <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa grand island Scuba diving   details, Videos and further process"
-                            class="theme-btn btn-style-three">
-                            <span class="btn-title">Get Details</span></a>
-                        </div>
-                      </div>
-                      <div class="link-box">
-                        <a href="tel:8287768117" class="theme-btn book-btn"><span>Book on Call </span></a>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/couple5_3_11zon.webp"
+                        alt="Smiling couple poses for a selfie outdoors at dusk, greenery in the background."
+                        title=" Couple enjoying a selfie outdoors" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Vedant Singh</h5>
+                      <div class="designation">Lucknow, 2023</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                       </div>
                     </div>
+                    <div class="text">
+                      We tried their water sports combo, and it was super fun!
+                      Parasailing was the highlight, and the bumper rides were
+                      full of laughs. Highly recommend it for thrill-seekers.
+                    </div>
                   </div>
                 </div>
-                <!--Price Column-->
-                <div class="price-column col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
-                  data-wow-duration="1500ms">
-                  <div class="price-block">
-                    <div class="inner-box">
-                      <div class="plan-header">
-                        <h4 class="plan-title">
-                          Scuba Diving at Fort Island
-                        </h4>
-                        <div class="subtitle">
-                          With Watersports | Budget Combo
-                        </div>
-                        <div class="price">
-                          <s style="font-size: x-large">4,500 </s><br />
-                          <span class="amount">2,500</span>
-                          <span class="cycle"></span>
-                        </div>
-                        <div class="ratings">
-                          <div class="rate-text" style="color: #051137">
-                            <strong>4.6</strong> <a href="#">[679 Reviews]</a>
-                          </div>
-                          <div class="rate" style="color: goldenrod">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                          </div>
-                        </div>
-
-                        <div class="best-title">
-                          <span>Package inclusion</span>
-                        </div>
-                      </div>
-                      <div class="plan-features">
-                        <ul class="clearfix">
-                          <li>
-                            <span class="flaticon-truck"></span> Free Pick
-                            up/drop (1.5 Hour Bus Journey)
-                          </li>
-                          <li>
-                            <span class="flaticon-sailboat"></span> Speedboat sea trip over Arabian sea.
-                          </li>
-                          <li>
-                            <span class="flaticon-boat"></span> Dolphin |
-                            Sightseeing
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> Scuba Diving
-                            at Fort Island
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba-1"></span> Scuba
-                            Training by PADI Diver
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba-1"></span> Scuba Head
-                            Cap
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> Scuba Diving
-                            Full Wet Suit
-                          </li>
-
-                          <li>
-                            <span class="flaticon-swimming-pool"></span> Scuba
-                            Cylinder
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba-1"></span> Mouth Pump
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> BCD Regulator
-                          </li>
-                          <li>
-                            <span class="flaticon-video-camera"></span> HD
-                            Live Videoshoot underwater with GoPro Camera.
-                          </li>
-                          <li>
-                            <span class="flaticon-boat-race"></span> Water
-                            Sports
-                          </li>
-                          <li>
-                            <span class="flaticon-jet-ski"></span> JetSki Ride
-                          </li>
-                          <li>
-                            <span class="flaticon-surf-sea"></span> Bumper
-                            Ride
-                          </li>
-                          <li>
-                            <span class="flaticon-sailboat"></span>
-                            Parasailling With Sea Dip (Free Sea Dip Worth
-                            500)
-                          </li>
-                          <li>
-                            <span class="flaticon-boat"></span> Speed Boat Ride
-                          </li>
-                          <li>
-                            <span class="flaticon-surf"></span> Banana ride
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> Snorkeling
-                            (complimentary)
-                          </li>
-
-                          <li>
-                            <span class="flaticon-kitchen"></span> Breakfast|
-                            Lunch (veg & Non-veg)
-                          </li>
-                          <li>
-                            <span class="flaticon-kitchen"></span> Mineral
-                            Water | Beers
-                          </li>
-
-                          <li>
-                            <span class="flaticon-wallet"></span> Booking
-                            Amount is <strong>1,000 INR/per person</strong>
-                          </li>
-                        </ul>
-                        <hr />
-                        <div class="link">
-                          <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello, its great to know about scubadivingadventure.in. Help me with the Goa Scuba diving details, Videos and further process"
-                            class="theme-btn btn-style-three">
-                            <span class="btn-title">Get Details</span></a>
-                        </div>
-                      </div>
-                      <div class="link-box">
-                        <a href="tel:8287768117" class="theme-btn book-btn"><span>Book on Call </span></a>
+              </div>
+              <!--Testimonial Block-->
+              <div class="testimonial-block">
+                <div class="inner-box">
+                  <div class="content">
+                    <div class="icon-box">
+                      <span class="flaticon-quote-1"></span>
+                    </div>
+                    <div class="image">
+                      <img loading="lazy" src="images/review/couple4_2_11zon.webp"
+                        alt="A couple sits back-to-back on a rock, surrounded by a scenic, green landscape."
+                        title=" Couple enjoying a scenic moment" width="80" height="80" />
+                    </div>
+                    <div class="info">
+                      <h5>Rohit</h5>
+                      <div class="designation">Mumbai, 2022</div>
+                    </div>
+                    <div class="rating">
+                      <div class="curve"></div>
+                      <div class="rate">
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Image Column-->
-          <div class="image-column col-xl-4 col-lg-12 col-sm-12">
-            <div class="inner wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <img loading="lazy" src="images/gallery/3.jpeg" alt="scubadiving-in-andaman" title="scubadiving"
-                width="370" height="430" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Pricing Section-->
-    <section class="pricing-section">
-      <div class="auto-container">
-        <div class="row clearfix">
-          <!--Pricing Column-->
-          <div class="pricing-column col-xl-8 col-lg-12 col-sm-12">
-            <div class="inner">
-              <div class="sec-title with-border">
-                <div class="upper-text">Scuba Diving in Andaman</div>
-                <h2>Bestselling <strong>Packages</strong></h2>
-                <div class="separator"></div>
-                <div class="link-box">
-                  <a href="andaman-nicobar-island-activities.html" class="theme-btn btn-style-one">
-                    <div class="btn-title">Andaman All Activities</div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="row clearfix">
-                <!--Price Column-->
-                <div class="price-column col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
-                  data-wow-duration="1500ms">
-                  <div class="price-block">
-                    <div class="inner-box">
-                      <div class="plan-header">
-                        <h4 class="plan-title">
-                          Scuba Diving at Andaman Island
-                        </h4>
-                        <div class="subtitle">
-                          Best scubadiving for Non-swimmers
-                        </div>
-
-                        <div class="price">
-                          <span class="amount">5,500</span>
-                          <span class="cycle">INR</span>
-                        </div>
-                        <div class="ratings">
-                          <div class="rate-text" style="color: #051137">
-                            <strong>4.9</strong> <a href="#">[208 Reviews]</a>
-                          </div>
-                          <div class="rate" style="color: goldenrod">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                          </div>
-                        </div>
-
-                        <div class="best-title">
-                          <span> Special Offers</span>
-                        </div>
-                      </div>
-
-                      <div class="plan-features">
-                        <ul class="clearfix">
-                          <li>
-                            <span class="flaticon-location"></span> North Bay
-                            Island, Andaman
-                          </li>
-                          <li>
-                            <span class="flaticon-sailboat"></span> NO
-                            Swimming Skills Required
-                          </li>
-                          <li>
-                            <span class="flaticon-boat-race"></span> Best For
-                            Beginners
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> Scuba Diving
-                            at Andaman Island
-                          </li>
-                          <li>
-                            <span class="flaticon-boat-1"></span> Scuba diving
-                            Training by PADI dive master
-                          </li>
-                          <li>
-                            <span class="flaticon-quality"></span> Certified
-                            Scuba Dive Master accompany you underwater
-                          </li>
-
-                          <li>
-                            <span class="flaticon-boat"></span> Boat Ride to
-                            Dive location
-                          </li>
-
-                          <li>
-                            <span class="flaticon-video-camera"></span> Photos
-                            & videos underwater ( Go Pro 10 camera underwater)
-                          </li>
-                          <li>
-                            <span class="flaticon-yacht"></span> Boat Trip |
-                            Sightseeing
-                          </li>
-                          <li>
-                            <span class="flaticon-clock"></span> Maximum Depth
-                            12 Metres
-                          </li>
-                          <li>
-                            <span class="flaticon-quality"></span> Cetified
-                            Scuba Trainer
-                          </li>
-
-                          <li>
-                            <span class="flaticon-truck"></span> Free Pick
-                            up/drop
-                          </li>
-                          <li>
-                            <span class="flaticon-wallet"></span> Pre-Book it
-                            on <strong>15% Discount</strong>
-                          </li>
-                          <li>
-                            <span class="flaticon-wallet"></span> Booking
-                            Amount is <strong>1,000 INR/per person</strong>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="link-box">
-                        <a href="tel:8287768117" class="theme-btn book-btn"><span>Book on Call </span></a>
-                      </div>
+                    <div class="text">
+                      Their packages are budget-friendly and offer a lot of
+                      activities. We loved scuba diving, and the equipment was
+                      clean and modern. Great value for money!
                     </div>
-                  </div>
-                </div>
-                <!--Price Column-->
-                <div class="price-column col-md-6 col-sm-12 wow fadeInDown" data-wow-delay="0ms"
-                  data-wow-duration="1500ms">
-                  <div class="price-block">
-                    <div class="inner-box">
-                      <div class="plan-header">
-                        <h4 class="plan-title">
-                          Scuba Diving at Neil Island
-                        </h4>
-                        <div class="subtitle">Andaman & Nicobar Island</div>
-                        <div class="price">
-                          <span class="amount">6,000</span>
-                          <span class="cycle">INR</span>
-                        </div>
-                        <div class="ratings">
-                          <div class="rate-text" style="color: #051137">
-                            <strong>4.8</strong> <a href="#">[123 Reviews]</a>
-                          </div>
-                          <div class="rate" style="color: goldenrod">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                          </div>
-                        </div>
-                        <div class="best-title">
-                          <span> Special Offers</span>
-                        </div>
-                      </div>
-
-                      <div class="plan-features">
-                        <ul class="clearfix">
-                          <li>
-                            <span class="flaticon-location"></span> Neil
-                            Islnad, Andaman Island
-                          </li>
-                          <li>
-                            <span class="flaticon-sailboat"></span> NO
-                            Swimming Skills Required
-                          </li>
-                          <li>
-                            <span class="flaticon-boat-race"></span> Best For
-                            Beginners
-                          </li>
-                          <li>
-                            <span class="flaticon-scuba"></span> Scuba Diving
-                            at Andaman Island
-                          </li>
-                          <li>
-                            <span class="flaticon-boat-1"></span> Scuba diving
-                            Training by PADI dive master
-                          </li>
-                          <li>
-                            <span class="flaticon-quality"></span> Certified
-                            Scuba Dive Master accompany you underwater
-                          </li>
-
-                          <li>
-                            <span class="flaticon-boat"></span> Boat Ride to
-                            Dive location
-                          </li>
-
-                          <li>
-                            <span class="flaticon-video-camera"></span> Photos
-                            & videos underwater ( Go Pro 10 camera underwater)
-                          </li>
-                          <li>
-                            <span class="flaticon-yacht"></span> Boat Trip |
-                            Sightseeing
-                          </li>
-                          <li>
-                            <span class="flaticon-clock"></span> Maximum Depth
-                            12 Metres
-                          </li>
-                          <li>
-                            <span class="flaticon-quality"></span> Cetified
-                            Scuba Trainer
-                          </li>
-
-                          <li>
-                            <span class="flaticon-truck"></span> Free Pick
-                            up/drop
-                          </li>
-                          <li>
-                            <span class="flaticon-wallet"></span> Pre-Book it
-                            on <strong>15% Discount</strong>
-                          </li>
-                          <li>
-                            <span class="flaticon-wallet"></span> Booking
-                            Amount is <strong>1,000 INR/per person</strong>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="link-box">
-                        <a href="tel:8287768117" class="theme-btn book-btn"><span>Book on Call </span></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Image Column-->
-          <div class="image-column col-xl-4 col-lg-12 col-sm-12">
-            <div class="inner wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <img loading="lazy" src="images/scuba7.webp" alt="Scubadiving in Andaman" title="scubadiving" width="370"
-                height="430" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Features Section-->
-    <section class="features-section">
-      <div class="auto-container">
-        <div class="row clearfix">
-          <!--Feature-->
-          <div class="feature-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="icon-box">
-                <div class="octagonWrap">
-                  <div class="octagon"></div>
-                </div>
-                <span class="icon flaticon-scuba"></span>
-              </div>
-              <div class="content">
-                <h4>Quality & <br />Best Equipments</h4>
-                <div class="text">
-                  Perfectly simple & easy to use. Provide best safety.
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Feature-->
-          <div class="feature-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="icon-box">
-                <div class="octagonWrap">
-                  <div class="octagon"></div>
-                </div>
-                <span class="icon flaticon-boat-race"></span>
-              </div>
-              <div class="content">
-                <h4>Professional & <br />Expert Instructors</h4>
-                <div class="text">
-                  The wise man therefore always holds in these matters.
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Feature-->
-          <div class="feature-block col-lg-4 col-md-12 col-sm-12">
-            <div class="inner-box">
-              <div class="icon-box">
-                <div class="octagonWrap">
-                  <div class="octagon"></div>
-                </div>
-                <span class="icon flaticon-wallet"></span>
-              </div>
-              <div class="content">
-                <h4>Value for <br />Spending Money</h4>
-                <div class="text">
-                  Pleasures to secure best offers and service.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Testimonials Section-->
-    <section class="testimonials-section-two">
-      <div class="auto-container">
-        <div class="sec-title-two centered with-border">
-          <div class="upper-text">Reviews</div>
-          <h2>Travellers <strong>Experiences</strong></h2>
-          <div class="separator"></div>
-        </div>
-      </div>
-      <div class="auto-container">
-        <div class="carousel-box">
-          <div class="testimonial-carousel-two owl-theme owl-carousel">
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/Rohan_6_11zon.webp"
-                      alt="Man standing on a rocky outcrop, wearing a turquoise shirt and sunglasses, overlooking a landscape."
-                      title="Rohan's Review" width="70" height="70" />
-                  </div>
-                  <div class="info">
-                    <h5>Suraj Shaw</h5>
-                    <div class="designation">Kolkata, 2023</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    Booked a scuba and water sports combo, and it was perfect.
-                    The scuba diving was well-organized, and the activities
-                    like jet skiing added so much fun. Loved it!
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/Amit_8_11zon.webp"
-                      alt="Person standing on a boat, capturing a photo of a serene, calm body of water."
-                      title=" Person capturing a serene moment on a boat" />
-                  </div>
-                  <div class="info">
-                    <h5>Parth Patel</h5>
-                    <div class="designation">Surat, 2023</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    The scuba diving experience at Grand Island was absolutely
-                    incredible. The team was professional and made sure we
-                    were comfortable throughout. Highly recommended for anyone
-                    visiting Goa!
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/couple_9_11zon.webp"
-                      alt="A couple poses together at the beach; sunglasses on, smiling with water and trees in the background."
-                      title="Couple enjoying the beach" />
-                  </div>
-                  <div class="info">
-                    <h5>Sagar Shah</h5>
-                    <div class="designation">Delhi, 2024</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    Tried scuba diving and bumper rides with them, and it was
-                    super fun! The instructors were friendly, and the water
-                    was so clear. Perfect adventure spot for family and
-                    friends.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/Priya_5_11zon.webp"
-                      alt="Three friends pose for a selfie in front of a restaurant sign labeled Ohaba Restaurant."
-                      title="Megha's Review" />
-                  </div>
-                  <div class="info">
-                    <h5>Megha Verma</h5>
-                    <div class="designation">Indore, 2023</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    Their parasailing and jet skiing activities were
-                    thrilling! The team was very professional, and the
-                    equipment was top-notch. Had a blast with my friends!
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/couple2_10_11zon.webp"
-                      alt="Couple wearing matching pink jackets and sunglasses, smiling and posing together outdoors."
-                      title=" Couple enjoying the outdoors" />
-                  </div>
-                  <div class="info">
-                    <h5>Mohit Kumar</h5>
-                    <div class="designation">Noida, 2023</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    We did the scuba and water sports combo, and it was
-                    perfect for our family. Everyone had fun, and the staff
-                    was very accommodating. Great value for money!
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/couple6_4_11zon.webp"
-                      alt="Man in a blue jacket and woman in a green and gold saree pose together with a plant behind them."
-                      title="Couple enjoying a moment together" />
-                  </div>
-                  <div class="info">
-                    <h5>Shrikant Reddy</h5>
-                    <div class="designation">Hyderabad, 2023</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    From the booking process to the dive, everything was
-                    smooth. The detailed instructions and guidance made the
-                    experience stress-free. Totally worth it!
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/couple5_3_11zon.webp"
-                      alt="Smiling couple poses for a selfie outdoors at dusk, greenery in the background."
-                      title=" Couple enjoying a selfie outdoors" />
-                  </div>
-                  <div class="info">
-                    <h5>Rohit Rajput</h5>
-                    <div class="designation">Jaipur, 2024</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    Their water sports packages are amazing! The parasailing
-                    views were stunning, and the banana boat ride was
-                    hilarious fun. Great way to enjoy Goa.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/ruhi_7_11zon.webp"
-                      alt="Woman in sunglasses holding a bouquet of purple orchids, wearing a black shirt and beige skirt."
-                      title="Ruhi's Review" />
-                  </div>
-                  <div class="info">
-                    <h5>Kritika</h5>
-                    <div class="designation">Bangalore, 2023</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    Had an awesome time doing scuba diving and bumper rides.
-                    The staff was very friendly and helpful. Definitely
-                    booking with them again on my next trip to Goa!
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/couple5_3_11zon.webp"
-                      alt="Smiling couple poses for a selfie outdoors at dusk, greenery in the background."
-                      title=" Couple enjoying a selfie outdoors" />
-                  </div>
-                  <div class="info">
-                    <h5>Vedant Singh</h5>
-                    <div class="designation">Lucknow, 2023</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    We tried their water sports combo, and it was super fun!
-                    Parasailing was the highlight, and the bumper rides were
-                    full of laughs. Highly recommend it for thrill-seekers.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Testimonial Block-->
-            <div class="testimonial-block">
-              <div class="inner-box">
-                <div class="content">
-                  <div class="icon-box">
-                    <span class="flaticon-quote-1"></span>
-                  </div>
-                  <div class="image">
-                    <img loading="lazy" src="images/review/couple4_2_11zon.webp"
-                      alt="A couple sits back-to-back on a rock, surrounded by a scenic, green landscape."
-                      title=" Couple enjoying a scenic moment" />
-                  </div>
-                  <div class="info">
-                    <h5>Rohit</h5>
-                    <div class="designation">Mumbai, 2022</div>
-                  </div>
-                  <div class="rating">
-                    <div class="curve"></div>
-                    <div class="rate">
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </div>
-                  </div>
-                  <div class="text">
-                    Their packages are budget-friendly and offer a lot of
-                    activities. We loved scuba diving, and the equipment was
-                    clean and modern. Great value for money!
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Video Section-->
-    <section class="similar-yachts" style="background-color: #051137; text-align: center">
-      <div class="auto-container">
-        <div class="upper-title">
-          <h2 style="color: #fff">Try the Ultimate Experience</h2>
-        </div>
+      <!--Video Section-->
+      <section class="similar-yachts" style="background-color: #051137; text-align: center">
+        <div class="auto-container">
+          <div class="upper-title">
+            <h2 style="color: #fff">Try the Ultimate Experience</h2>
+          </div>
 
-        <div class="row clearfix">
-          <!-- Video Placeholders -->
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- Vimeo Placeholder -->
-              <div id="videoWrapper1" style="
+          <div class="row clearfix">
+            <!-- Video Placeholders -->
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- Vimeo Placeholder -->
+                <div id="videoWrapper1" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1821,13 +1830,13 @@
                     background: url('https://img.youtube.com/vi/DipmpAqQ9kk/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper2" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper2" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1839,13 +1848,13 @@
                     background: url('https://img.youtube.com/vi/_0Intn67_mg/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper3" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper3" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1857,13 +1866,13 @@
                     background: url('https://img.youtube.com/vi/38eENRVmOoA/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper4" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper4" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1875,13 +1884,13 @@
                     background: url('https://img.youtube.com/vi/bFvpk-eJN_g/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper5" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper5" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1893,13 +1902,13 @@
                     background: url('https://img.youtube.com/vi/xiz_W_eFoqw/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper6" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper6" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1911,14 +1920,14 @@
                     background: url('https://img.youtube.com/vi/9AiP5RfkkHg/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <!-- Video Placeholders -->
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper7" style="
+            <!-- Video Placeholders -->
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper7" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1930,13 +1939,13 @@
                     background: url('https://img.youtube.com/vi/kaPE1LIQ2jc/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper8" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper8" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1948,13 +1957,13 @@
                     background: url('https://img.youtube.com/vi/rD_BcG-zVuA/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper9" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper9" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1966,13 +1975,13 @@
                     background: url('https://img.youtube.com/vi/R6q2QIZyUZU/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper10" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper10" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -1984,13 +1993,13 @@
                     background: url('https://img.youtube.com/vi/dPbdfTnUkf8/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper11" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper11" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -2002,13 +2011,13 @@
                     background: url('https://img.youtube.com/vi/nS11-q0bl5U/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
             </div>
-          </div>
 
-          <div class="rental-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <!-- YouTube Placeholder -->
-              <div id="videoWrapper12" style="
+            <div class="rental-block col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <!-- YouTube Placeholder -->
+                <div id="videoWrapper12" style="
                     position: relative;
                     width: 100%;
                     max-width: 800px;
@@ -2020,197 +2029,198 @@
                     background: url('https://img.youtube.com/vi/46I4okQCX20/hqdefault.jpg')
                       no-repeat center / cover;
                   "></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-text">
+            Enjoy Goa's Best Highlight With Us. For Best Experience...
+            <a
+              href="https://api.whatsapp.com/send?phone=918287768117&text=Hello,its great to know about scubadivingadventure.in. Help me with the details, Videos and further process">Book
+              Your Activities in Goa with Us.</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lazy Load Script -->
+      <script>
+        function loadVideo(wrapperId, videoUrl) {
+          const wrapper = document.getElementById(wrapperId);
+          const iframe = document.createElement("iframe");
+
+          iframe.setAttribute("src", videoUrl);
+          iframe.setAttribute("title", "Video");
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute(
+            "allow",
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          );
+          iframe.setAttribute("allowfullscreen", "");
+          iframe.setAttribute("loading", "lazy");
+          iframe.style.position = "absolute";
+          iframe.style.top = "0";
+          iframe.style.left = "0";
+          iframe.style.width = "100%";
+          iframe.style.height = "100%";
+
+          wrapper.innerHTML = ""; // Clear the placeholder
+          wrapper.appendChild(iframe);
+        }
+
+        document
+          .getElementById("videoWrapper1")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper1",
+              "https://www.youtube.com/embed/DipmpAqQ9kk?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper2")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper2",
+              "https://www.youtube.com/embed/_0Intn67_mg?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper3")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper3",
+              "https://www.youtube.com/embed/38eENRVmOoA?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper4")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper4",
+              "https://www.youtube.com/embed/bFvpk-eJN_g?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper5")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper5",
+              "https://www.youtube.com/embed/xiz_W_eFoqw?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper6")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper6",
+              "https://www.youtube.com/embed/9AiP5RfkkHg?autoplay=1"
+            );
+          });
+        document
+          .getElementById("videoWrapper7")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper7",
+              "https://www.youtube.com/embed/kaPE1LIQ2jc?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper8")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper8",
+              "https://www.youtube.com/embed/rD_BcG-zVuA?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper9")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper9",
+              "https://www.youtube.com/embed/R6q2QIZyUZU?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper10")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper10",
+              "https://www.youtube.com/embed/dPbdfTnUkf8?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper11")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper11",
+              "https://www.youtube.com/embed/nS11-q0bl5U?autoplay=1"
+            );
+          });
+
+        document
+          .getElementById("videoWrapper12")
+          .addEventListener("click", function () {
+            loadVideo(
+              "videoWrapper12",
+              "https://www.youtube.com/embed/46I4okQCX20?autoplay=1"
+            );
+          });
+      </script>
+
+      <!--Features Section-->
+      <section class="services-section-four">
+        <div class="auto-container">
+          <div class="inner-container">
+            <div class="title-box">
+              <h2>Best Service <br />We Strive to Provide Our Customers</h2>
+            </div>
+            <div class="service-list">
+              <ul class="clearfix">
+                <li>
+                  <span class="icon flaticon-scuba"></span> Real Scuba
+                  Experience
+                </li>
+                <li>
+                  <span class="icon flaticon-surfer"></span>Best Watersports
+                  Activities
+                </li>
+                <li>
+                  <span class="icon flaticon-quality"></span> Professional
+                  Instructor
+                </li>
+                <li>
+                  <span class="icon flaticon-time"></span> Max. Dive-in Time
+                </li>
+                <li>
+                  <span class="icon flaticon-picture"></span> GoPro10 HD live
+                  photo/videoshoot underwater
+                </li>
+                <li>
+                  <span class="icon flaticon-truck"></span> Pick up & drop to
+                  Scuba Centre
+                </li>
+              </ul>
+            </div>
+            <div class="text">Best Rated Scuba Experience in India.</div>
+            <div class="link-box">
+              <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello,its great to know about scubadivingadventure.in. Help me with the  details, Videos and further process"
+                class="theme-btn btn-style-five">
+                <div class="btn-title">Get Details on WhatsApp</div>
+              </a>
             </div>
           </div>
         </div>
-
-        <div class="bottom-text">
-          Enjoy Goa's Best Highlight With Us. For Best Experience...
-          <a
-            href="https://api.whatsapp.com/send?phone=918287768117&text=Hello,its great to know about scubadivingadventure.in. Help me with the details, Videos and further process">Book
-            Your Activities in Goa with Us.</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Lazy Load Script -->
-    <script>
-      function loadVideo(wrapperId, videoUrl) {
-        const wrapper = document.getElementById(wrapperId);
-        const iframe = document.createElement("iframe");
-
-        iframe.setAttribute("src", videoUrl);
-        iframe.setAttribute("title", "Video");
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute(
-          "allow",
-          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        );
-        iframe.setAttribute("allowfullscreen", "");
-        iframe.setAttribute("loading", "lazy");
-        iframe.style.position = "absolute";
-        iframe.style.top = "0";
-        iframe.style.left = "0";
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-
-        wrapper.innerHTML = ""; // Clear the placeholder
-        wrapper.appendChild(iframe);
-      }
-
-      document
-        .getElementById("videoWrapper1")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper1",
-            "https://www.youtube.com/embed/DipmpAqQ9kk?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper2")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper2",
-            "https://www.youtube.com/embed/_0Intn67_mg?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper3")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper3",
-            "https://www.youtube.com/embed/38eENRVmOoA?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper4")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper4",
-            "https://www.youtube.com/embed/bFvpk-eJN_g?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper5")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper5",
-            "https://www.youtube.com/embed/xiz_W_eFoqw?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper6")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper6",
-            "https://www.youtube.com/embed/9AiP5RfkkHg?autoplay=1"
-          );
-        });
-      document
-        .getElementById("videoWrapper7")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper7",
-            "https://www.youtube.com/embed/kaPE1LIQ2jc?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper8")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper8",
-            "https://www.youtube.com/embed/rD_BcG-zVuA?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper9")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper9",
-            "https://www.youtube.com/embed/R6q2QIZyUZU?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper10")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper10",
-            "https://www.youtube.com/embed/dPbdfTnUkf8?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper11")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper11",
-            "https://www.youtube.com/embed/nS11-q0bl5U?autoplay=1"
-          );
-        });
-
-      document
-        .getElementById("videoWrapper12")
-        .addEventListener("click", function () {
-          loadVideo(
-            "videoWrapper12",
-            "https://www.youtube.com/embed/46I4okQCX20?autoplay=1"
-          );
-        });
-    </script>
-
-    <!--Features Section-->
-    <section class="services-section-four">
-      <div class="auto-container">
-        <div class="inner-container">
-          <div class="title-box">
-            <h2>Best Service <br />We Strive to Provide Our Customers</h2>
-          </div>
-          <div class="service-list">
-            <ul class="clearfix">
-              <li>
-                <span class="icon flaticon-scuba"></span> Real Scuba
-                Experience
-              </li>
-              <li>
-                <span class="icon flaticon-surfer"></span>Best Watersports
-                Activities
-              </li>
-              <li>
-                <span class="icon flaticon-quality"></span> Professional
-                Instructor
-              </li>
-              <li>
-                <span class="icon flaticon-time"></span> Max. Dive-in Time
-              </li>
-              <li>
-                <span class="icon flaticon-picture"></span> GoPro10 HD live
-                photo/videoshoot underwater
-              </li>
-              <li>
-                <span class="icon flaticon-truck"></span> Pick up & drop to
-                Scuba Centre
-              </li>
-            </ul>
-          </div>
-          <div class="text">Best Rated Scuba Experience in India.</div>
-          <div class="link-box">
-            <a href="https://api.whatsapp.com/send?phone=918287768117&text=Hello,its great to know about scubadivingadventure.in. Help me with the  details, Videos and further process"
-              class="theme-btn btn-style-five">
-              <div class="btn-title">Get Details on WhatsApp</div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Activities Section-->
+      </section>
+      <!--Activities Section-->
+    </main>
 
     <!-- <section class="news-section-three">
         <div class="auto-container">
@@ -2237,7 +2247,7 @@
             <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12">
               <div class="footer-widget info-widget">
                 <div class="logo">
-                  <a href="#"><img loading="lazy" src="images/gallery/6.webp" alt="" /></a>
+                  <a href="#"><img loading="lazy" src="images/gallery/6.webp" alt="" width="161" height="80" /></a>
                 </div>
                 <div class="info">
                   <ul>
@@ -2361,19 +2371,19 @@
       <span class="icon flaticon-back"></span>
     </div>
 
-    
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-ui.min.js" defer defer></script>
-    <script src="js/jquery.fancybox.min.js" defer defer></script>
-    <script src="js/owl.min.js" defer defer></script>
-    <script src="js/appear.js" defer defer></script>
-    <script src="js/wow.js" defer defer></script>
-    <script src="js/scrollbar.js" defer defer></script>
-    <script src="js/validate.js" defer defer></script>
-    <script src="js/element-in-view.js" defer defer></script>
-    <script src="js/custom-script.js" defer defer></script>
+
+    <script src="js/jquery.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/jquery-ui.min.js" defer></script>
+    <script src="js/jquery.fancybox.min.js" defer></script>
+    <script src="js/owl.min.js" defer></script>
+    <script src="js/appear.js" defer></script>
+    <script src="js/wow.js" defer></script>
+    <script src="js/scrollbar.js" defer></script>
+    <script src="js/validate.js" defer></script>
+    <script src="js/element-in-view.js" defer></script>
+    <script src="js/custom-script.js" defer></script>
     <!--Coockie-->
   </div>
   <!-- <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script> -->
@@ -2502,10 +2512,50 @@
 </script> -->
 
 
-  <!-- Source Code Protection JavaScript -->
-  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize Carousel
+      function initializeCarousel() {
+        if ($(".banner-carousel").length) {
+          $(".banner-carousel").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            smartSpeed: 700,
+            navText: [
+              '<span class="prev">‹</span>',
+              '<span class="next">›</span>',
+            ],
+          });
+        }
+      }
 
-  
+      initializeCarousel();
+
+      // Lazy load remaining slides
+      const lazySlides = document.querySelectorAll(".lazy-slide");
+      lazySlides.forEach((slide) => {
+        const bgUrl = slide.getAttribute("data-bg");
+        if (bgUrl) {
+          const img = new Image();
+          img.src = bgUrl;
+          img.onload = () => {
+            slide.style.backgroundImage = `url(${bgUrl})`;
+            slide.classList.add("loaded");
+          };
+        }
+      });
+    });
+  </script>
+
+  <!-- Source Code Protection JavaScript -->
+
+
+
 </body>
 
 </html>
