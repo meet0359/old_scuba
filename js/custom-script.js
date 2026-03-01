@@ -11,6 +11,7 @@
 	}
 
 	//Update Header Style and Scroll to Top
+	var ticking = false;
 	function headerStyle() {
 		if ($('.main-header').length) {
 			var windowpos = $(window).scrollTop();
@@ -26,6 +27,14 @@
 				sticky_header.removeClass("animated slideInDown");
 				scrollLink.fadeOut(300);
 			}
+		}
+		ticking = false;
+	}
+
+	function requestTick() {
+		if (!ticking) {
+			requestAnimationFrame(headerStyle);
+			ticking = true;
 		}
 	}
 
@@ -765,8 +774,8 @@
 	   ========================================================================== */
 
 	$(window).on('scroll', function () {
-		headerStyle();
-	});
+		requestTick();
+	}, { passive: true });
 
 	/* ==========================================================================
 	   When document is Resized, do
